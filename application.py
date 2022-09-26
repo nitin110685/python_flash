@@ -6,7 +6,7 @@ import mysql.connector as connector
 application=Flask(__name__)
 application.secret_key= "abc"
 
-connection= connector.connect(host="pythondb.che2nq7t17ma.us-east-2.rds.amazonaws.com",user="root",password="vertex123",database="python_database")
+connection= connector.connect(host="localhost",user="root",password="",database="tr_motors")
 
 @application.route('/sign')
 def sign():
@@ -73,6 +73,13 @@ def enquiry():
 
 
 @application.route('/Home')
+def Home():
+	if 'response' in session:
+		return render_template("Home.html")
+	else:
+		return redirect(url_for('login'))
+
+@application.route('/')
 def Home():
 	if 'response' in session:
 		return render_template("Home.html")
@@ -435,4 +442,4 @@ def admin_fees():
 
 
 if __name__=='__main__':
-	application.run(host='18.188.11.151',debug=True)
+	application.run(host='0.0.0.0',debug=True)
