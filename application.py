@@ -6,7 +6,7 @@ import mysql.connector as connector
 application=Flask(__name__)
 application.secret_key= "abc"
 
-connection= connector.connect(host="localhost",user="root",password="",database="tr_motors")
+connection= connector.connect(host="pythondb.che2nq7t17ma.us-east-2.rds.amazonaws.com",user="root",password="vertex123",database="python_database")
 
 @application.route('/sign')
 def sign():
