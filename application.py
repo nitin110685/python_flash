@@ -80,7 +80,7 @@ def Home():
 		return redirect(url_for('login'))
 
 @application.route('/')
-def Home():
+def index():
 	if 'response' in session:
 		return render_template("Home.html")
 	else:
