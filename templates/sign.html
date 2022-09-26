@@ -1,0 +1,121 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+<!-- font awesome  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+<title>Sign Up</title>
+<style type="text/css">
+body{
+background-color: lightgray;
+}
+.btn2{
+margin-left: 290px;
+}
+.btn1{
+margin-left: 250px;
+}
+.card{
+margin-left: 290px;
+margin-top: 150px;
+ 
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+h2{
+font-family: serif;
+}
+</style>
+</head>
+<body>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="card" style="width: 35rem;height: 460px;">
+
+<center><h2 style="padding-top:10px;"><b>Create an account</b></h2></center>
+
+
+<div class="card-body">
+<form action="{{url_for('sign1')}}" method="POST" class="row g-3">
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg" style="margin-bottom:7px">First and last name</span>
+  </div>
+  <input type="text" aria-label="First name" class="form-control" id="Fname" name="Fname" required>
+  <input type="text" aria-label="Last name" class="form-control" id="Lname" name="Lname" required>
+</div>
+ 
+  <div class="input-group">
+  <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg" id="basic-addon1" style="margin-bottom:7px"><i class="fas fa-mobile-alt"></i></span>
+              </div>
+<input type="tel" maxlength="10" class="form-control" id="mobile" style="margin-bottom:7px" placeholder="Mobile number" name="mobile" required>
+
+</div>
+<div class="input-group ">
+	<div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2" style="margin-bottom:7px">@</span>
+    </div>
+<input type="emailaddress" class="form-control" id="email" style="margin-bottom:7px" placeholder="Emailaddress" name="email" required>
+
+  
+</div>
+
+<div class="input-group ">
+<div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+              </div>
+<input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+ <div class="input-group-append">
+    <span class="input-group-text" onclick="password_show_hide();">
+        <i class="far fa-eye-slash d-none" id="hide_eye"></i>
+            <i class="far fa-eye" id="show_eye"></i>    
+                </span>
+              </div>
+</div>
+
+<div class="d-grid pt-3">
+<center><button class="btn btn-primary" style="height: 45px; width:200px;font-size:20px;border-radius: 25px;" type="submit"> <b>Sign Up</b></button></center>
+</div>
+
+<p style="text-align: center; font-size: 18px;">Already have an account?<a href="login"> Login</a></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+  function password_show_hide() {
+  var x = document.getElementById("password");
+  var hide_eye = document.getElementById("hide_eye");
+  var show_eye = document.getElementById("show_eye");
+  hide_eye.classList.remove("d-none");
+  if (x.type === "password") {
+    x.type = "text";
+    show_eye.style.display = "block";
+    hide_eye.style.display = "none";
+  } else {
+    x.type = "password";
+    show_eye.style.display = "none";
+    hide_eye.style.display = "block";
+  }
+}
+</script>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TR Motor Driving School</title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+	.container-fluid{
+			  padding-left: 0rem;
+			  padding-right: 0rem;
+			  overflow: hidden;
+          }
+    .i3{
+		height: 20px;
+		width: 20px;
+		
+		/*margin-left: 180px;*/
+	}
+	.cardbody{
+		padding: 30px;
+		margin-top: 20px;
+	}
+	.quick{
+		padding-left: 20px;
+		margin-top: 30px;
+		
+	}
+	.hour{
+		padding-left: 100px;
+		margin-top: 30px;
+	}
+	.busin{
+		padding-right: 10px;
+		margin-top: 30px;
+	}
+	.navigation{
+		
+		margin-top: 30px;
+	}
+	.c5{
+		background-color: black;
+		color: white;
+		padding: 20px;
+		padding-left: 70px;
+		height: 400px;
+
+	}
+
+	 .text-block {
+  position: absolute;
+  bottom: 380px;
+  right: 290px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.nav-link{
+   	color: white;
+		transition: scale(1);
+    }
+      .nav-link:hover{
+      	transform: scale(1.06);
+      	background-color: #ffc107;
+      	color: black;
+      }
+
+       #btn_search{
+   	color: white;
+		transition: scale(1);
+    }
+      #btn_search:hover{
+      	transform: scale(1.06);
+      	background-color: #ffc107;
+      	color: black;
+      }
+
+</style>
+
+<body>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					     		 <img src="static/img/about.jpg" class="d-block w-100" height="750px" alt="...">
+					     		 <div class="carousel-caption d-none d-md-block">
+							        <div class="text-block">
+								    <center><h1 style="color:white;">ROAD TEST PREPERATION</h1></center>
+								  </div>
+							        
+							      </div>
+					    		</div>
+
+					   <!--  <div class="carousel-item">
+					      <img src="static/img/slide1.jpg" class="d-block w-100" height="750px" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5>Second slide label</h5>
+					        <p>Some representative placeholder content for the second slide.</p>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img src="static/img/slide3.jpg" class="d-block w-100" height="750px" alt="...">
+					    </div> -->
+					    <nav class="navbar navbar-expand-lg navbar bg-dark" >
+					  <div class="container-fluid">
+					    <a class="navbar-brand" href="#" style="color:white;">
+					     <!--  <img src="static/img/trmds.png" alt="" width="80" height="80" class="d-inline-block align-text-top" style="margin-left:100px"> -->
+					      <br>&nbsp;&nbsp;&nbsp;&nbsp;TR MOTOR DRIVING SCHOOL
+					    </a>
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					      <span class="navbar-toggler-icon"></span>
+					    </button>
+					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" style="margin-left:110px " href="Home">HOME</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="About">ABOUT US</a>
+					        </li>
+					        <!-- <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Courses.html">COURSES</a> 
+					          <div class="nav-item dropdown">
+                    <a href="Courses" class="nav-link dropdown" data-toggle="dropdown">COURSES</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Choosing a Driving School</a>
+                        <a href="#" class="dropdown-item">Road Test preperation</a>
+                        <a href="#" class="dropdown-item">Driving Basics</a>
+                    </div>
+                </div>
+					        </li> -->
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Courses">COURSES</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Testimonials">TESTIMONIALS</a>
+					        </li>
+					         <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Schedule">SCHEDULE LESSONS</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Contact">CONTACT US</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Blog">BLOG</a>
+					        </li>
+					        <!-- <li class="nav-item dropdown">
+					          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					            Dropdown
+					          </a>
+					          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					            <li><a class="dropdown-item" href="#">Action</a></li>
+					            <li><a class="dropdown-item" href="#">Another action</a></li>
+					            <li><hr class="dropdown-divider"></li>
+					            <li><a class="dropdown-item" href="#">Something else here</a></li>
+					          </ul>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link disabled">Disabled</a>
+					        </li>-->
+					        <!-- <h6><img src="static/img/call.jpg" class="i3">: +91 8149650394</h6> -->
+					      </ul> 
+					      <form class="d-flex">
+					        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					        <button class="btn btn-outline-light" id="btn_search"  style="margin-right: 20px;" type="submit">Search</button>
+					      </form>
+					    </div>
+					  </div>
+
+
+					</nav>
+					<!-- navbar end -->
+					<div class="heading">
+						<strong><h1>Welcome to T.R Motor Driving School</h1></strong>
+						
+					</div>
+
+
+		
+					<!-- <section>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+							<div class="card" style="width: 300px;height: 400px;">
+								  <h5 class="card-header">Find Your Course</h5>
+								  <div class="card-body">
+								    <h5 class="card-title">Special title treatment</h5>
+								    <p class="card-text">
+								    	<label for="exampleFormControlInput1" class="form-label">Full Name</label>
+								    <i class="fa fa-user icon"></i>
+						    	<input type="text" class="form-control " id="exampleFormControlInput1" placeholder="alex">
+         					<div style="max-width:400px;margin:auto">
+						        <div class="input-icons">
+						            
+						            <input class="input-field" type="text">
+						            <i class="fa fa-instagram icon"></i>
+						            <input class="input-field" type="text">
+						            <i class="fa fa-envelope icon"></i>
+						            <input class="input-field" type="text">
+						            <i class="fa fa-youtube icon"></i>
+						            <input class="input-field" type="text">
+						            <i class="fa fa-facebook icon"></i>
+						            <input class="input-field" type="text">
+						        </div>
+						      </div>
+						    </p>
+						    <a href="#" class="btn btn-primary">Go somewhere</a>
+						  </div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<h3 style="color:black;font-size: 28px;">WELCOME TO T.R MOTOR DRIVING SCHOOL</h3>
+
+						
+					</div>
+
+
+
+								
+					</div>	
+				</div>
+		</section> -->
+					
+
+					<!-- <div class="col-md-6">
+						<p style="color:white;font-size: 28px;">WELCOME TO T.R MOTOR DRIVING SCHOOL</p>
+						
+					</div> -->
+
+						<div class="col-md-6">
+
+						<p style="color:white;">WELCOME TO T.R MOTOR DRIVING SCHOOL</p>
+						
+					
+				</div>
+					
+
+
+										
+					  </div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</section>
+	<!-- carousel end -->
+
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<!-- <div class="col-md-12"> -->
+					<center><h2 style="margin-top:30px;font-family: 'Montserrat';font-size: 35px;"><b>ROAD TEST PREPERATION</b></h2></center>
+					<div class="col-md-6">
+					<img src="static/img/about.jpg" class="d-block w-100"  style="padding-top: 20px;padding-bottom: 50px;height: 565px;width: 500px; margin-left: 10px 	;" alt="...">
+				</div>
+					<div class="col-md-6" style="font-size: 18px;font-family:'Montserrat';margin-top: 30px;">
+						<p>Practice makes perfect! We know you’ve heard that before, but it’s especially true with driving. The more experience and practice you accumulate before your road test, the more prepared you will be to pass the road test on your first or second try and earn your driver’s license.<br></p>
+						<p> Sometimes even the best drivers will get nervous during the actual road test, and the loss of confidence will negatively impact their performance on the test.
+						Our suggestion to deal with this is simple: be confident in what you know, and take the test only when you are ready. If you have received professional instruction, hours of practice, and experience in a safe and Department of Motor Vehicles approved car, then what you know about driving should be sufficient to earn you a successful outcome on test day.</p>
+						<p>As you can see elsewhere on our website, our students pass the road test well over 90% of the time on their first or second try! We believe there are specific reasons why we see all types of new and inexperienced drivers achieve these outcomes.</p>
+						<a href="Schedule" type="button" class="btn" style="margin-left:30px;height: 50px;width:200px;margin-top:10px;background-color: #ffc107;color: black;font-size: 20px;"><b>Schedule Lesson</b></a>
+					<a href="Courses" type="button" class="btn" style="margin-left:30px;height: 50px;width:200px;margin-top:10px;background-color:black;color: white;font-size: 20px;"><b>View Course</b></a>
+						
+					</div>
+				<!-- </div> -->
+					 	
+				
+			</div>
+			
+		</div>
+	</section>
+
+		<!-- <h2>PROFESSIONAL INSTRUCTION</h2> -->
+
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+					<div class="col-md-8">
+								<h2 style="margin-left: 50px;font-family:'Montserrat';margin-top: 50px;"><b>Controls</b></h2>
+								<p style="margin-left:50px;font-family:'Montserrat'"> You are expected to be familiar with all the controls in the vehicle you are using and identify them when requested by the examiner. During the test, the examiner will evaluate your use of the controls. Know how to:
+								<ul style="margin-left:50px;font-family:'Montserrat'">
+								<li>use the defroster when the windows fog up;</li>
+								<li>turn on the windshield wipers;</li>
+								<li>keep both hands on the wheel whenever possible (approximately 9 o’clock and 3 o’clock);</li>
+								<li>use your signal light when moving away from the curb, turning , or changing lanes;</li>
+								<li>steer smoothly at all times;</li>
+								<li>accelerate smoothly, adjusting to weather, road and traffic conditions; and</li>
+								<li>bring the vehicle to a smooth stop and start braking in advance of your stopping position to avoid sudden stops.</li></ul></p>
+
+							</div>
+						<div class="col-md-4">
+							<img src="static/img/control.jpg" height="220px" width="250px" style="margin-top: 100px;margin-left: 50px;">
+						</div>
+					
+					</div>
+				</div>
+			</section>
+			<hr style="height: 3px;color: black;">
+
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-8">
+							<h2 style="margin-left: 50px;font-family:'Montserrat';margin-top:50px ;"><b>Parking/Starting/Backing</b></h2>
+							<p style="margin-left: 50px;font-family:'Montserrat'">Parking safely requires good control of the vehicle, accurate judgment, and observation and steering skills. During the road test you will be required to perform a parallel and a hill park.Inability to successfully complete one of these skill maneuvers in three attempts will result in a failure of the road test.</p>
+							<h4 style="margin-left: 50px;font-family:'Montserrat'"><u>Parallel park</u></h4>
+							<p style="margin-left: 50px;font-family:'Montserrat'">The examiner will have you position the vehicle beside a parked vehicle, and then back into
+							a legally parked position behind it. One pull-ahead is allowed on each attempt to correct the
+							vehicle position. If either tire is more than 50 cm from the curb, the park attempt is repeated.</p>
+							<p style="margin-left: 50px;font-family:'Montserrat'">Tips:
+							<ul style="margin-left: 50px;font-family:'Montserrat'">
+							<li>Observe around and behind you by both turning and using the mirrors before and during backing.</li>
+							<li>Perform the manoeuver smoothly.</li>
+							<li>Do not hit the curb hard or allow your tires to climb over the curb.</li>
+							<li>If a back-up camera is equipped on your vehicle, it may be left on and used as a reference. However, you must complete the parking using all of the required
+							observations. You will be assigned points for not using the mirrors or looking behind you.You may not use a feature that controls the vehicle while parking (i.e., park assist).</li></ul></p>
+						</div>
+						<div class="col-md-4">
+							<img src="static/img/parellel.jpg" height="250px" width="300px" style="margin-top:120px;margin-left:50px">
+							
+						</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</section>
+
+
+					
+				<section>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<h4 style="margin-left: 50px;font-family:'Montserrat'"><u>Hill park</u></h4>
+								<p style="margin-left: 50px;font-family:'Montserrat'">The examiner will ask you to park facing either up or
+								down a hill, with our without a curb, as if the vehicle will
+								be left for the day. You must know how to turn the
+								wheels and how far to be from the edge of the roadway.
+								If a hill is unavailable, this manoeuver may be simulated.
+								The examiner will describe the slope of the hill.</p>
+								<p style="margin-left: 50px;font-family:'Montserrat'">Tips:
+								<ul style="margin-left: 50px;font-family:'Montserrat'">
+								<li> The attempt must be repeated if either curb-side tire is more than 50 cm from the curb (if present).</li>
+								<li>Turn wheels correctly.</li>
+								<li>Remember to select “park” or a low gear and set the
+								parking brake.</li></ul></p>
+								
+							</div>
+							<div class="col-md-2">
+								<img src="static/img/up.jpg" height="200px" width="230px" style="margin-top:30px">	
+							</div>
+							<div class="col-md-2">
+								<img src="static/img/down1.jpg" height="180px" width="210px" style="margin-top:30px;margin-right: 30px;">
+							</div>
+							
+						</div>
+				
+					</div>
+				</section>	
+
+				<hr style="height: 3px;">
+					
+					
+			
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-8">
+							<h2 style="margin-left: 50px;font-family:'Montserrat';margin-top:50px "><b>Lane driving /changing lanes/position</b></h2>
+							<p style="margin-left: 50px;font-family:'Montserrat'">A traffic lane is a section of the roadway wide enough to accommodate the movement of
+							vehicles, whether or not it is indicated by markings on the roadway. There are no
+							designated “parking lanes” in urban areas.
+							Keep your vehicle in the proper traffic lane. High-traffic areas will have pavement markings to identify lanes in the same or opposite directions. Residential or rural locations will not have lane markings. These are referred to as unmarked lanes. This means there may be more than one lane in each direction if the road is wide enough.</p>
+							<p style="margin-left: 50px;font-family:'Montserrat'">Tips:
+							<ul style="margin-left: 50px;font-family:'Montserrat'">
+							<li>Avoid driving in the centre of an unmarked roadway (usually
+							residential) whenever possible.</li>
+							<li>When making a right turn from an unmarked residential
+							roadway, be sure to look over your right shoulder before you
+							move over to the curb lane. Although the lanes are unmarked,
+							you are making a lane change.</li>
+							<li>Change lanes only when enough space is available.</li>
+							<li>Maintain good lane position, speed and space cushions
+							(keeping room between your vehicles and those around you).</li>
+						</ul></p>
+							
+						</div>
+						<div class="col-md-2">
+						  <img src="static/img/lane.jpg" height="190px" width="220px" style="margin-top:120px;">
+						
+						</div>
+						<div class="col-md-2">
+							<img src="static/img/lane1.jpg" height="190px" width="220px" style="margin-top:120px">
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</section>
+
+			<hr style="height: 3px;">
+
+				<section>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<h2 style="margin-left: 50px;font-family:'Montserrat';margin-top:50px "><b>Intersections/Turns</b></h2>
+							 <p style="margin-left: 50px;font-family:'Montserrat';">When turning right or left, you are required to enter and exit an intersection in the lane closest to the curb (right turn) or the first available lane (left turn). If, however, there is a parked vehicle or other obstruction within half of a block on the new road, you may turn directly into the second lane. Be sure to look down the road to plan correctly.
+							 Unless otherwise shown by a traffic sign, crosswalks exist at all intersections, whether or not they are indicated by markings on the roadway.<br>
+							Know the meanings of all traffic signs, signals and pavement markings and obey them
+							consistently. See Chapter 2 in the Driver’s Guide.<br>
+							Being too aggressive is dangerous and increases the chance of
+							a collision. Being too cautious affects traffic behind you. Both
+							errors show a lack of good driving judgment. Remember, other
+							road users expect drivers to know and follow the rules of the
+							road and to assume the right of way when it is safe to do so.</p>
+							<p style="margin-left: 50px;font-family:'Montserrat';">Tips:
+							<ul style="margin-left: 50px;font-family:'Montserrat'; ">
+							<li>Come to a full and complete stop for stop signs or red lights.</li>
+							<li>When required to stop and a stop line or crosswalk is present, the vehicle must stop
+							before crossing them.</li>
+							<li>If there is no stop line or marked crosswalk you must stop within three metres (10 feet)of the intersecting roadway.</li>
+							<li>Avoid stopping or braking unnecessarily at controlled intersections where you have the right of way.</li>
+							<li>Keep your wheels straight while waiting to make a left turn.</li>
+							<li>Show good sense of timing in deciding when to turn. Do not be too cautious or too
+							aggressive.</li>
+							<li>Some intersections have no traffic signs and no traffic signal lights. These are
+							uncontrolled intersections: you must yield the right of way to a vehicle on your right.</li></ul></p>
+								
+							</div>
+
+							<div class="col-md-2">
+							<img src="static/img/right.jpg" height="190px" width="200px" style="margin-top:170px">
+							
+							</div>
+							<div class="col-md-2">
+								<img src="static/img/left.jpg" height="190px" width="200px" style="margin-top:170px">
+								
+							</div>
+							
+						</div>
+						
+					</div>
+				</section>
+
+				<hr style="height: 3px;">
+				 
+			
+				<section>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-8">
+								<h2 style="margin-left: 50px;font-family:'Montserrat';margin-top:50px "><b>Traffic lights / signs</b></h2>
+								<p style="margin-left: 50px;font-family:'Montserrat'">You need to be aware of all traffic lights and signs, know what they mean, and drive accordingly.</p>
+								<p style="margin-left: 50px;font-family:'Montserrat'">Tips:
+								<ul style="margin-left: 50px;font-family:'Montserrat'">
+								<li>Watch for “stale” green lights. These are when the pedestrian crossing light has
+								changed to “do not cross,” meaning the green light will turn
+								amber shortly.</li>
+								<li>Be prepared to stop and do not enter the intersection when the light is amber. It is your responsibility to anticipate when
+								the light will change.</li>
+								<li>Show caution when approaching flashing amber lights.</li>
+								<li>Remember to observe all traffic lights in a timely fashion.</li>
+								<li>Always make a full and complete stop for a red light before turning right.</li>
+							</ul></p>
+								
+							</div>
+							<div class="col-md-2">
+								<img src="static/img/signal.jpg" height="200px" width="250px" style="margin-top: 100px">	
+							</div>
+							<div class="col-md-2">
+								<img src="static/img/stop.jpg" height="200px" width="220px" style="margin-top: 100px;margin-right: 50px;">
+							</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</section>
+
+				<hr style="height: 3px;">
+				
+
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-8">
+							<h2 style="margin-left: 50px;font-family:'Montserrat';margin-top:50px "><b>Speed</b></h2>
+							<p style="margin-left: 50px;font-family:'Montserrat'">Obey the posted speed limits. Remember to adjust your speed properly due to weather,
+							road, visibility, and traffic conditions: the speed limit is the maximum allowed under ideal conditions.<br>
+							You are allowed a small margin of error on your speed, but make sure to maintain your
+							speed at or slightly below the limit.<br>
+							During your road test you will drive in a school and/or playground zone. Playground zone
+							speed limits are in effect every day. School zone speed limits are in effect only on days when school is held. If you are unsure if school is held on the day of your test, check with the local school district.<br>
+							If you do not slow down to obey a school or playground zone when the speed limit is
+							30 km/h, you will fail the road test. Likewise, you will be assigned points for driving 30km/h if the zone is not in effect. If other vehicles behind you are affected by this slow driving, you may be assigned a fail.</p>
+							<p style="margin-left: 50px;font-family:'Montserrat'">Tips:
+							<ul style="margin-left: 50px;font-family:'Montserrat'">
+							<li>Be aware of when school and playground zones are in effect. Obey these speed limits.</li>
+							<li>Avoid travelling too slow or too fast for road, weather, and traffic conditions.</li></ul>
+						</p>
+						</div>
+						<div class="col-md-2">
+							<img src="static/img/speed.jpg" height="150px" width="200px" style="margin-top:120px">
+							
+						</div>
+						<div class="col-md-2">
+							<img src="static/img/speed1.jpg" height="150px" width="200px" style="margin-top:120px">
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</section>
+
+			<hr style="height: 3px;">
+			
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-8">
+							<h2 style="margin-left: 50px;font-family:'Montserrat';margin-top:50px "><b>Cofidence</b></h2>
+							<p style="margin-left: 50px;font-family:'Montserrat';">Good drivers make good decisions, constantly. Driving requires making lots of big and small decisions quickly and correctly, and that requires confidence in your driving skills. Sometimes even the best drivers will get nervous during the actual road test, and the loss of confidence will negatively impact their performance on the test.<br>
+							Our suggestion to deal with this is simple: be confident in what you know, and take the test only when you are ready. If you have received professional instruction, hours of practice, and experience in a safe and Department of Motor Vehicles approved car, then what you know about driving should be sufficient to earn you a successful outcome on test day.<br>
+							Just be confident in the skills and instincts that you have developed through hard work and over time, then take a deep breath on test day, and get yourself a driver’s license. You’ve earned it.</p>
+							
+						</div>
+						<div class="col-md-4">
+							<img src="static/img/confidence.jpg" height="200px" width="220px" style="margin-top:80px;margin-left: 80px;">
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</section>
+
+			
+	<footer>
+	<section>
+		<div class="container-fluid">
+			<div class="row c5">
+				<div class="col-md-3 quick">
+					<h4>Quick Links</h4>
+					<p style="font-size:17px"><a href="Home"  style="text-decoration: none;
+		color: white;">Home</a><br>
+					<a href="About"  style="text-decoration: none;
+		color: white;" >About us</a><br>
+					<a href="Courses"  style="text-decoration: none;
+		color: white;" >Courses</a><br>
+					<a href="Blog"  style="text-decoration: none;
+		color: white;" >Blog</a><br>
+					<a href="Services"  style="text-decoration: none;
+		color: white;" >Our Services</a><br>	
+					<a href="Road"  style="text-decoration: none;
+		color: white;">Road Test Preperation</a></p>
+				</div>
+				<div class="col-md-3 navigation">
+					<h4>Navigation</h4>
+					
+					<p style="font-size:17px"><a href="Licence"  style="text-decoration: none;
+		color: white;">Licence Enquiry</a><br>
+					<a href="Testimonials"  style="text-decoration: none;
+		color: white;">Test Drives</a><br>
+					<a href="#"  style="text-decoration: none;
+		color: white;">Extra Driving Practices</a><br>
+					<a href="Contact"  style="text-decoration: none;
+		color: white;" >Contact Us</a><br>
+					<a href="Feedback"  style="text-decoration: none;
+		color: white;">Feedback</a><br>
+					<a href="Term"  style="text-decoration: none;
+		color: white;">Terms & Conditions</a>
+					
+				</div>
+				<div class="col-md-3 busin">
+					<h4>Business Information</h4>	
+					<p style="font-size:17px"><img src="static/img/office.jpg" class="i3"> Office 1<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sundaram Nagar, Vijapur Road<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solapur - 413004</p>
+					<p style="font-size:17px"><img src="static/img/office.jpg" class="i3"> Office 2<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132 Vijay Deshmukh Nagar, Vijapur Road &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solapur - 413004<br>
+					<img src="static/img/gmail.jpg" class="i3">: tr.driving.school11@gmail.com<br>
+					<img src="static/img/call.jpg" class="i3">: +91 8080058363<br>
+					<img src="static/img/whatsapp.jpg" class="i3">: +91 8007839944 </p>
+					<!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/facebook.jpg" height="24px" width="24px">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/youtube.jpg" height="20px" width="20px">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/instagram.jpg" height="20px" width="20px"></p>
+ -->
+					
+				</div>
+				<div class="col-md-3 hour">
+					<h4>Hours</h4>	
+					<p style="font-size:17px">Appointment Hours:<br>
+					10:00 AM - 6:00 PM<br>
+					Training Hours(Morning):<br>
+					7:00 AM - 11:00 AM<br>
+					Training Hours(Evening):<br>
+					3:00 PM - 7:00 PM</p>
+
+					
+				</div>
+				<p style="font-size:22px">Connect with us :
+				&nbsp;&nbsp;<a href="https://www.facebook.com/TR-MOTAR-Driving-School-Solapur-103840701387802/?ti=as"><img src="static/img/facebook.jpg" style="height:25px;width:30px;margin-right:10px"></a>
+				<a href="#"><img src="static/img/instagram.jpg" style="height:25px;width:30px;margin-right:10px"></a>
+				<a href="https://youtube.com/channel/UC9eGzlFSjTjMXeAgYWLCnOQ"><img src="static/img/youtube.jpg" style="height:35px;width:35px"></a>
+			  <a href="#"><img src="static/img/snap.jpg" style="height:30px;width:30px;margin-left:10px"></a></p>
+
+				
+			</div>
+		    
+		</div>
+
+	</section>
+	<!-- footer end -->
+	<div>
+		<center><p style="background-color:#494754;color: white;height: 70px;font-family: 'Montserrat'"><br>&copy;2022 TR Motor Driving School. All Rights Reserved.</p></center>	
+	</div>
+	
+</footer>
+
+
+</body>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TR Motor Driving School</title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+	.container-fluid{
+			  padding-left: 0rem;
+			  padding-right: 0rem;
+			  overflow: hidden;
+          }
+    .i3{
+		height: 20px;
+		width: 20px;
+		
+		/*margin-left: 180px;*/
+	}
+	.cardbody{
+		padding: 30px;
+		margin-top: 20px;
+	}
+	.quick{
+		padding-left: 20px;
+		margin-top: 30px;
+		
+	}
+	.hour{
+		padding-left: 100px;
+		margin-top: 30px;
+	}
+	.busin{
+		padding-right: 10px;
+		margin-top: 30px;
+	}
+	.navigation{
+		
+		margin-top: 30px;
+	}
+	.c5{
+		background-color: black;
+		color: white;
+		padding: 20px;
+		padding-left: 70px;
+		height: 400px;
+
+	}
+
+	.text-block {
+  position: absolute;
+  bottom: 390px;
+  right: 350px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav-link{
+   	color: white;
+		transition: scale(1);
+    }
+      .nav-link:hover{
+      	transform: scale(1.06);
+      	background-color: #ffc107;
+      	color: black;
+      }
+
+   #btn_search{
+   	color: white;
+		transition: scale(1);
+    }
+      #btn_search:hover{
+      	transform: scale(1.06);
+      	background-color: #ffc107;
+      	color: black;
+      }
+
+</style>
+
+<body>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					     		 <img src="static/img/about.jpg" class="d-block w-100" height="750px" alt="...">
+					     		 <div class="carousel-caption d-none d-md-block">
+							       <div class="text-block">
+								    <center><h1 style="color:white;">TESTIMONIALS</h1></center>
+								  </div>
+
+								  <p style="margin-bottom:305px;font-size:25px;margin-left: 50px;color: white;font-family: 'Montserrat'">Here are the some test drives vedios to know more about us !!!</p>
+							        
+							      </div>
+					    		</div>
+
+					   <!--  <div class="carousel-item">
+					      <img src="static/img/slide1.jpg" class="d-block w-100" height="750px" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5>Second slide label</h5>
+					        <p>Some representative placeholder content for the second slide.</p>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img src="static/img/slide3.jpg" class="d-block w-100" height="750px" alt="...">
+					    </div> -->
+					    <nav class="navbar navbar-expand-lg navbar bg-dark" >
+					  <div class="container-fluid">
+					    <a class="navbar-brand" href="#" style="color:white;">
+					     <!--  <img src="static/img/trmds.png" alt="" width="80" height="80" class="d-inline-block align-text-top" style="margin-left:100px"> -->
+					      <br>&nbsp;&nbsp;&nbsp;&nbsp;TR MOTOR DRIVING SCHOOL
+					    </a>
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					      <span class="navbar-toggler-icon"></span>
+					    </button>
+					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" style="margin-left:110px " href="Home">HOME</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="About">ABOUT US</a>
+					        </li>
+					        <!-- <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Courses.html">COURSES</a> 
+					          <div class="nav-item dropdown">
+                    <a href="Courses" class="nav-link dropdown" data-toggle="dropdown">COURSES</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Choosing a Driving School</a>
+                        <a href="#" class="dropdown-item">Road Test preperation</a>
+                        <a href="#" class="dropdown-item">Driving Basics</a>
+                    </div>
+                </div>
+					        </li> -->
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Courses">COURSES</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Testimonials">TESTIMONIALS</a>
+					        </li>
+					         <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Schedule">SCHEDULE LESSONS</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Contact">CONTACT US</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Blog">BLOG</a>
+					        </li>
+					        <!-- <li class="nav-item dropdown">
+					          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					            Dropdown
+					          </a>
+					          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					            <li><a class="dropdown-item" href="#">Action</a></li>
+					            <li><a class="dropdown-item" href="#">Another action</a></li>
+					            <li><hr class="dropdown-divider"></li>
+					            <li><a class="dropdown-item" href="#">Something else here</a></li>
+					          </ul>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link disabled">Disabled</a>
+					        </li>-->
+					        <!-- <h6><img src="static/img/call.jpg" class="i3">: +91 8149650394</h6> -->
+					      </ul> 
+					      <form class="d-flex">
+					        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					        <button class="btn btn-outline-light" id="btn_search"  style="margin-right: 20px;" type="submit">Search</button>
+					      </form>
+					    </div>
+					  </div>
+
+
+					</nav>
+					<!-- navbar end -->
+					<div class="heading">
+						<strong><h1>Welcome to T.R Motor Driving School</h1></strong>
+						
+					</div>
+
+
+		
+					
+
+						<div class="col-md-6">
+
+						<p style="color:white;">WELCOME TO T.R MOTOR DRIVING SCHOOL</p>
+						
+					
+				</div>
+					
+
+
+										
+					  </div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</section>
+	<!-- carousel end -->
+
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<!-- <div class="col-md-12">
+					<iframe width="560" height="315" src="static/https://www.youtube.com/embed/choPuLMZIwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+				</div> -->
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 50px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/BTdWiy8t0tA " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Four wheeler training test drive after - <b>10 Days</b> of joining .<br>Distance travlled - <b>5km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 50px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/HaRlec8Vr5Y  " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Four wheeler training test  drive after - <b>15 Days</b> of joining .<br>Distance travlled - <b>4km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 50px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/eBqHzw7fLEg    " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Four wheeler training test  drive after - <b>17 Days</b> of joining .<br>Distance travlled - <b>3km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 50px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/5ik1CrbGEko  " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Four wheeler training test  drive after - <b>8 Days</b> of joining .<br>Distance travlled - <b>5km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<!-- <div class="col-md-12">
+					<iframe width="560" height="315" src="static/https://www.youtube.com/embed/choPuLMZIwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+				</div> -->
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 20px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/iWjr47zMnUA " width="350" height="380" frameborder="0" allowfullscreen ></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Training available for <b>two wheeler</b> - Activa scooty for male & female and also with gear bike. <br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 20px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/jnuzfL28r4M " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Two wheeler training test drive after - <b>5 Days</b> of joining .<br>Distance travlled - <b>3km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 20px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/909Fyg8IMQo  " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Two wheeler training test drive after - <b>7 Days</b> of joining .<br>Distance travlled - <b>3km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 20px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/SiB2uvEiUwk " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Two wheeler training test drive after - <b>3 Days</b> of joining .<br>Distance travlled - <b>3km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<!-- <div class="col-md-12">
+					<iframe width="560" height="315" src="static/https://www.youtube.com/embed/choPuLMZIwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+				</div> -->
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 20px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/vVToCcemi3Y " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Two wheeler training test drive after - <b>3 Days</b> of joining .<br>Distance travlled - <b>3km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 20px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/en-OQo4LPao " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Two wheeler training test drive after - <b>11 Days</b> of joining .<br>Distance travlled - <b>3km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 20px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/nCpMS73yk88   " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Two wheeler training test drive after - <b>10 Days</b> of joining .<br>Distance travlled - <b>3km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card" style="height:380px;width: 350px;margin-bottom: 50px;margin-right: 10px;margin-top: 20px;margin-left: 10px;">
+						<iframe  src="https://www.youtube.com/embed/7cEgjsLurmU " width="350" height="380" frameborder="0" allowfullscreen></iframe>
+
+						  <div class="card-body">
+						    <p class="card-text" style="font-family: 'Montserrat'">Two wheeler training test drive after - <b>8 Days</b> of joining .<br>Distance travlled - <b>3km</b>.<br>T.R Motor Driving School , Solapur</p>
+						  </div>
+						</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<footer>
+	<section>
+		<div class="container-fluid">
+			<div class="row c5">
+				<div class="col-md-3 quick">
+					<h4>Quick Links</h4>
+					<p style="font-size:17px"><a href="Home"  style="text-decoration: none;
+		color: white;">Home</a><br>
+					<a href="About"  style="text-decoration: none;
+		color: white;" >About us</a><br>
+					<a href="Courses"  style="text-decoration: none;
+		color: white;" >Courses</a><br>
+					<a href="Blog"  style="text-decoration: none;
+		color: white;" >Blog</a><br>
+					<a href="Services"  style="text-decoration: none;
+		color: white;" >Our Services</a><br>	
+					<a href="Road"  style="text-decoration: none;
+		color: white;">Road Test Preperation</a></p>
+				</div>
+				<div class="col-md-3 navigation">
+					<h4>Navigation</h4>
+					
+					<p style="font-size:17px"><a href="Licence"  style="text-decoration: none;
+		color: white;">Licence Enquiry</a><br>
+					<a href="Testimonials"  style="text-decoration: none;
+		color: white;">Test Drives</a><br>
+					<a href="#"  style="text-decoration: none;
+		color: white;">Extra Driving Practices</a><br>
+					<a href="Contact"  style="text-decoration: none;
+		color: white;" >Contact Us</a><br>
+					<a href="Feedback"  style="text-decoration: none;
+		color: white;">Feedback</a><br>
+					<a href="Term"  style="text-decoration: none;
+		color: white;">Terms & Conditions</a>
+					
+				</div>
+				<div class="col-md-3 busin">
+					<h4>Business Information</h4>	
+					<p style="font-size:17px"><img src="static/img/office.jpg" class="i3"> Office 1<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sundaram Nagar, Vijapur Road<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solapur - 413004</p>
+					<p style="font-size:17px"><img src="static/img/office.jpg" class="i3"> Office 2<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132 Vijay Deshmukh Nagar, Vijapur Road &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solapur - 413004<br>
+					<img src="static/img/gmail.jpg" class="i3">: tr.driving.school11@gmail.com<br>
+					<img src="static/img/call.jpg" class="i3">: +91 8080058363<br>
+					<img src="static/img/whatsapp.jpg" class="i3">: +91 8007839944 </p>
+					<!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/facebook.jpg" height="24px" width="24px">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/youtube.jpg" height="20px" width="20px">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/instagram.jpg" height="20px" width="20px"></p>
+ -->
+					
+				</div>
+				<div class="col-md-3 hour">
+					<h4>Hours</h4>	
+					<p style="font-size:17px">Appointment Hours:<br>
+					10:00 AM - 6:00 PM<br>
+					Training Hours(Morning):<br>
+					7:00 AM - 11:00 AM<br>
+					Training Hours(Evening):<br>
+					3:00 PM - 7:00 PM</p>
+
+					
+				</div>
+				<p style="font-size:22px">Connect with us :
+				&nbsp;&nbsp;<a href="https://www.facebook.com/TR-MOTAR-Driving-School-Solapur-103840701387802/?ti=as"><img src="static/img/facebook.jpg" style="height:25px;width:30px;margin-right:10px"></a>
+				<a href="#"><img src="static/img/instagram.jpg" style="height:25px;width:30px;margin-right:10px"></a>
+				<a href="https://youtube.com/channel/UC9eGzlFSjTjMXeAgYWLCnOQ"><img src="static/img/youtube.jpg" style="height:35px;width:35px"></a>
+			  <a href="#"><img src="static/img/snap.jpg" style="height:30px;width:30px;margin-left:10px"></a></p>
+
+				
+			</div>
+		    
+		</div>
+
+	</section>
+	<!-- footer end -->
+	<div>
+		<center><p style="background-color:#494754;color: white;height: 70px;font-family: 'Montserrat'"><br>&copy;2022 TR Motor Driving School. All Rights Reserved.</p></center>	
+	</div>
+	
+</footer>
+
+
+</body>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+</html>

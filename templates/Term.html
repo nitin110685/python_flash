@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TR Motor Driving School</title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+	.container-fluid{
+			  padding-left: 0rem;
+			  padding-right: 0rem;
+			  overflow: hidden;
+          }
+    .i3{
+		height: 20px;
+		width: 20px;
+		
+		/*margin-left: 180px;*/
+	}
+	.cardbody{
+		padding: 30px;
+		margin-top: 20px;
+	}
+	.quick{
+		padding-left: 20px;
+		margin-top: 30px;
+		
+	}
+	.hour{
+		padding-left: 100px;
+		margin-top: 30px;
+	}
+	.busin{
+		padding-right: 10px;
+		margin-top: 30px;
+	}
+	.navigation{
+		
+		margin-top: 30px;
+	}
+	.c5{
+		background-color: black;
+		color: white;
+		padding: 20px;
+		padding-left: 70px;
+		height: 400px;
+
+	}
+.text-block {
+  position: absolute;
+  bottom: 400px;
+  right: 300px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav-link{
+   	color: white;
+		transition: scale(1);
+    }
+      .nav-link:hover{
+      	transform: scale(1.06);
+      	background-color: #ffc107;
+      	color: black;
+      }
+
+ #btn_search{
+   	color: white;
+		transition: scale(1);
+    }
+      #btn_search:hover{
+      	transform: scale(1.06);
+      	background-color: #ffc107;
+      	color: black;
+      }
+
+
+
+  
+</style>
+<style type="text/css">
+	.collapsible {
+  background-color: white;
+  color: black;
+  /*cursor: pointer;*/
+  padding: 18px;
+  width: 70%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  /*background-color: white;*/
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  /*content: "\2212";*/
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+</style>
+
+
+<body>
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					     		 <img src="static/img/about.jpg" class="d-block w-100" height="750px" alt="...">
+					     		 <div class="carousel-caption d-none d-md-block">
+							        <div class="text-block">
+								    <center><h1 style="color:white;">TERMS & CONDITIONS</h1></center>
+								  </div>
+
+							      </div>
+					    		</div>
+
+					   <!--  <div class="carousel-item">
+					      <img src="static/img/slide1.jpg" class="d-block w-100" height="750px" alt="...">
+					      <div class="carousel-caption d-none d-md-block">
+					        <h5>Second slide label</h5>
+					        <p>Some representative placeholder content for the second slide.</p>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img src="static/img/slide3.jpg" class="d-block w-100" height="750px" alt="...">
+					    </div> -->
+					    <nav class="navbar navbar-expand-lg navbar bg-dark" >
+					  <div class="container-fluid">
+					    <a class="navbar-brand" href="#" style="color:white;">
+					     <!--  <img src="static/img/trmds.png" alt="" width="80" height="80" class="d-inline-block align-text-top" style="margin-left:100px"> -->
+					      <br>&nbsp;&nbsp;&nbsp;&nbsp;TR MOTOR DRIVING SCHOOL
+					    </a>
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					      <span class="navbar-toggler-icon"></span>
+					    </button>
+					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" style="margin-left:110px " href="Home">HOME</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="About">ABOUT US</a>
+					        </li>
+					        <!-- <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Courses.html">COURSES</a> 
+					          <div class="nav-item dropdown">
+                    <a href="Courses" class="nav-link dropdown" data-toggle="dropdown">COURSES</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Choosing a Driving School</a>
+                        <a href="#" class="dropdown-item">Road Test preperation</a>
+                        <a href="#" class="dropdown-item">Driving Basics</a>
+                    </div>
+                </div>
+					        </li> -->
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Courses">COURSES</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Testimonials">TESTIMONIALS</a>
+					        </li>
+					         <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Schedule">SCHEDULE LESSONS</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Contact">CONTACT US</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link active" aria-current="page" href="Blog">BLOG</a>
+					        </li>
+					        <!-- <li class="nav-item dropdown">
+					          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					            Dropdown
+					          </a>
+					          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					            <li><a class="dropdown-item" href="#">Action</a></li>
+					            <li><a class="dropdown-item" href="#">Another action</a></li>
+					            <li><hr class="dropdown-divider"></li>
+					            <li><a class="dropdown-item" href="#">Something else here</a></li>
+					          </ul>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link disabled">Disabled</a>
+					        </li>-->
+					        <!-- <h6><img src="static/img/call.jpg" class="i3">: +91 8149650394</h6> -->
+					      </ul> 
+					      <form class="d-flex">
+					        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					        <button class="btn btn-outline-light" id="btn_search"  style="margin-right: 20px;" type="submit">Search</button>
+					      </form>
+					    </div>
+					  </div>
+
+
+					</nav>
+					<!-- navbar end -->
+					<div class="heading">
+						<strong><h1>Welcome to T.R Motor Driving School</h1></strong>
+						
+					</div>
+
+
+		
+					<!-- <section>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+							<div class="card" style="width: 300px;height: 400px;">
+								  <h5 class="card-header">Find Your Course</h5>
+								  <div class="card-body">
+								    <h5 class="card-title">Special title treatment</h5>
+								    <p class="card-text">
+								    	<label for="exampleFormControlInput1" class="form-label">Full Name</label>
+								    <i class="fa fa-user icon"></i>
+						    	<input type="text" class="form-control " id="exampleFormControlInput1" placeholder="alex">
+         					<div style="max-width:400px;margin:auto">
+						        <div class="input-icons">
+						            
+						            <input class="input-field" type="text">
+						            <i class="fa fa-instagram icon"></i>
+						            <input class="input-field" type="text">
+						            <i class="fa fa-envelope icon"></i>
+						            <input class="input-field" type="text">
+						            <i class="fa fa-youtube icon"></i>
+						            <input class="input-field" type="text">
+						            <i class="fa fa-facebook icon"></i>
+						            <input class="input-field" type="text">
+						        </div>
+						      </div>
+						    </p>
+						    <a href="#" class="btn btn-primary">Go somewhere</a>
+						  </div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<h3 style="color:black;font-size: 28px;">WELCOME TO T.R MOTOR DRIVING SCHOOL</h3>
+
+						
+					</div>
+
+
+
+								
+					</div>	
+				</div>
+		</section> -->
+					
+
+					<!-- <div class="col-md-6">
+						<p style="color:white;font-size: 28px;">WELCOME TO T.R MOTOR DRIVING SCHOOL</p>
+						
+					</div> -->
+
+						<div class="col-md-6">
+
+						<p style="color:white;">WELCOME TO T.R MOTOR DRIVING SCHOOL</p>
+						
+					
+				</div>
+					
+
+
+										
+					  </div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</section>
+	<!-- carousel end -->
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 style="margin-top:20px;font-family: 'Montserrat'">Terms And Conditions</h1>
+					<p style="font-family: 'Montserrat';font-size: 20px;">Welcome to our Driving School! Driving School provides our services to you subject to the following conditions. Please read them carefully.</p>
+					<ul>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">Once taken admission will not be cancelled for any reason. Fees will not be refunded.</p></li>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">Learning License should be revoked within one month from the day of admission, otherwise you will have to pay the fees.</p></li>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">You have to pay full fees at a time.</p></li>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">Sunday will be a holiday.</p></li>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">If you takes leave, the class will not be resumed.If you want to take a vacation and you say to take it the next day this will not happen We will not take holiday, if it does, then the next day the holiday will be completed by taking more kilometers.</p></li>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">Class time can sometimes be 15/20 minutes late (due to traffic / new learners).</p></li>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">Ghat training will be done only once. It should be noted that 4 people will be with you.</p></li>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">Pick-up drop does not mean coming to the house, you have to come to the nearest intersection from the house.</p></li>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">After getting approval for Permanent License, you should come to the office to apply for your permanent licence.</p></li>
+					<li><p style="font-family: 'Montserrat';font-size: 18px;">If you want extra training, you have to pay the training fees.</p></li>
+					
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 style="font-family: 'Montserrat';margin-top:30px">FAQs</h1>
+
+					<button class="collapsible" style="font-family: 'Montserrat';margin-left: 50px;font-size: 17px;margin-top: 30px;"><b>WHAT ARE THE COURSE FEES?</b></button>
+					<div class="content" style="font-family: 'Montserrat';margin-left: 50px;">
+					  <p>At T.R Motor Driving School, the fee varies across the different driving courses we offer. You can check the<br> course page to see the different types of courses and also course duration and the number of practical and <br> theory lessons provided in different driving courses.</p>
+					</div>
+					<hr style="color:darkblack;height: 2px;width: 890px;margin-left: 70px;">
+
+					<button class="collapsible" style="font-family: 'Montserrat';margin-left:50px;font-size: 17px;"><b>HOW CAN I ENROL IN A DRIVING COURSE?</b></button>
+					<div class="content" style="font-family: 'Montserrat';margin-left: 50px;">
+					  <p>You can send an enquiry for the driving course of your choice via the website of T.R Motor Driving School.<br> After that, the concerned driving school will get in touch with you to take it forward.</p>
+					</div>
+					<hr style="color:darkblack;height: 2px;width: 890px;margin-left: 70px;">
+
+					<button class="collapsible" style="font-family: 'Montserrat';margin-left: 50px;font-size:17px;"><b>DO I NEED A CAR TO TAKE DRIVING LESSONS?</b></button>
+					<div class="content" style="font-family: 'Montserrat';margin-left: 50px;">
+					  <p>No! You do not need a car to take the Behind-the-Wheel lessons. We provide the training vehicle. Our<br> instructors will pick you up and drop you off at your location indicated on your registration.</p>
+					</div>
+					<hr style="color:darkblack;height: 2px;width: 890px;margin-left: 70px;">
+				
+					<button class="collapsible" style="font-family: 'Montserrat';margin-left:50px;font-size: 17px;"><b>WHAT TYPE OF TRAINING VEHICLES DO YOU USE?</b></button>
+					<div class="content" style="font-family: 'Montserrat';margin-left: 50px;">
+					  <p>T.R Motor Driving School uses Tata Tiago. These vehicles are extremely safe and offer a great and easy <br> driving environment to make the lessons more pleasurable and easier.</p>
+					</div>
+					<hr style="color:darkblack;height: 2px;width: 890px;margin-left: 70px;">
+
+					<button class="collapsible" style="font-family: 'Montserrat';margin-left:50px;font-size: 17px;"><b>DO YOU OFFER ADDITIONAL DRIVING LESSONS?</b></button>
+					<div class="content" style="font-family: 'Montserrat';margin-left: 50px;">
+					  <p>Yes, based on student's needs we offer additional lessons to make sure they are ready to drive, not just pass<br> the test. Using our unique grading system, students’ true needs and weaknesses become very noticeable<br> early throughout the lessons and based on the instructor’s recommendations additional lessons are<br> provided to perfect the student’s driving abilities.</p>
+					</div>
+					<hr style="color:darkblack;height: 2px;width: 890px;margin-left: 70px;">
+
+					<button class="collapsible" style="font-family: 'Montserrat';margin-left:50px;font-size: 17px;"><b>DO YOU HAVE ANY AGE CRITERIA FOR DRIVING SESSIONS?</b></button>
+					<div class="content" style="font-family: 'Montserrat';margin-left: 50px;">
+					  <p>Yes.Students must be 16 years old to begin any of the classroom or driving sessions.</p>
+					</div>
+					<hr style="color:darkblack;height: 2px;width: 890px;margin-left: 70px;">
+
+					<button class="collapsible" style="font-family: 'Montserrat';margin-left:50px;font-size: 17px;"><b>DO I HAVE TO KNOW HOW TO DRIVE WHEN I START ROAD TRAINING?</b></button>
+					<div class="content" style="font-family: 'Montserrat';margin-left: 50px;">
+					  <p>Students start road training with us at varying levels of experience. Some have never sat behind the wheel<br> before,we will adjust our instruction accordingly. The more physical comfort level the student has with the<br> car, the more they will get out of the road instruction. </p>
+					</div>
+					<hr style="color:darkblack;height: 2px;width: 890px;margin-left: 70px;">
+
+					<button class="collapsible" style="font-family: 'Montserrat';margin-left:50px;font-size: 17px;"><b>DO WE OFFER DRIVING LESSONS ON THE WEEKENDS?</b></button>
+					<div class="content" style="font-family: 'Montserrat';margin-left: 50px;">
+					  <p style="margin-bottom:50px;">Yes. We often have instructors working on Saturdays and Sundays.</p>
+					</div>
+					
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+
+	
+	
+
+	<footer>
+	<section>
+		<div class="container-fluid">
+			<div class="row c5">
+				<div class="col-md-3 quick">
+					<h4>Quick Links</h4>
+					<p style="font-size:17px"><a href="Home"  style="text-decoration: none;
+		color: white;">Home</a><br>
+					<a href="About"  style="text-decoration: none;
+		color: white;" >About us</a><br>
+					<a href="Courses"  style="text-decoration: none;
+		color: white;" >Courses</a><br>
+					<a href="Blog"  style="text-decoration: none;
+		color: white;" >Blog</a><br>
+					<a href="Services"  style="text-decoration: none;
+		color: white;" >Our Services</a><br>	
+					<a href="Road"  style="text-decoration: none;
+		color: white;">Road Test Preperation</a></p>
+				</div>
+				<div class="col-md-3 navigation">
+					<h4>Navigation</h4>
+					
+					<p style="font-size:17px"><a href="Licence"  style="text-decoration: none;
+		color: white;">Licence Enquiry</a><br>
+					<a href="Testimonials"  style="text-decoration: none;
+		color: white;">Test Drives</a><br>
+					<a href="#"  style="text-decoration: none;
+		color: white;">Extra Driving Practices</a><br>
+					<a href="Contact"  style="text-decoration: none;
+		color: white;" >Contact Us</a><br>
+					<a href="Feedback"  style="text-decoration: none;
+		color: white;">Feedback</a><br>
+					<a href="Term"  style="text-decoration: none;
+		color: white;">Terms & Conditions</a>
+					
+				</div>
+				<div class="col-md-3 busin">
+					<h4>Business Information</h4>	
+					<p style="font-size:17px"><img src="static/img/office.jpg" class="i3"> Office 1<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sundaram Nagar, Vijapur Road<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solapur - 413004</p>
+					<p style="font-size:17px"><img src="static/img/office.jpg" class="i3"> Office 2<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;132 Vijay Deshmukh Nagar, Vijapur Road &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solapur - 413004<br>
+					<img src="static/img/gmail.jpg" class="i3">: tr.driving.school11@gmail.com<br>
+					<img src="static/img/call.jpg" class="i3">: +91 8080058363<br>
+					<img src="static/img/whatsapp.jpg" class="i3">: +91 8007839944 </p>
+					<!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/facebook.jpg" height="24px" width="24px">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/youtube.jpg" height="20px" width="20px">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="static/img/instagram.jpg" height="20px" width="20px"></p>
+ -->
+					
+				</div>
+				<div class="col-md-3 hour">
+					<h4>Hours</h4>	
+					<p style="font-size:17px">Appointment Hours:<br>
+					10:00 AM - 6:00 PM<br>
+					Training Hours(Morning):<br>
+					7:00 AM - 11:00 AM<br>
+					Training Hours(Evening):<br>
+					3:00 PM - 7:00 PM</p>
+
+					
+				</div>
+				<p style="font-size:22px">Connect with us :
+				&nbsp;&nbsp;<a href="https://www.facebook.com/TR-MOTAR-Driving-School-Solapur-103840701387802/?ti=as"><img src="static/img/facebook.jpg" style="height:25px;width:30px;margin-right:10px"></a>
+				<a href="#"><img src="static/img/instagram.jpg" style="height:25px;width:30px;margin-right:10px"></a>
+				<a href="https://youtube.com/channel/UC9eGzlFSjTjMXeAgYWLCnOQ"><img src="static/img/youtube.jpg" style="height:35px;width:35px"></a>
+			  <a href="#"><img src="static/img/snap.jpg" style="height:30px;width:30px;margin-left:10px"></a></p>
+
+				
+			</div>
+		    
+		</div>
+
+	</section>
+	<!-- footer end -->
+	<div>
+		<center><p style="background-color:#494754;color: white;height: 70px;font-family: 'Montserrat'"><br>&copy;2022 TR Motor Driving School. All Rights Reserved.</p></center>	
+	</div>
+	
+</footer>
+
+
+</body>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</html>
